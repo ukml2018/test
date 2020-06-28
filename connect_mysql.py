@@ -31,7 +31,7 @@ if __name__ == '__main__':
 		for file in os.listdir(dir_path):
 			filename = os.fsdecode(file)
 			if filename.startswith('pos'):
-				#print(filename)
+				print(filename)
 				pos = pd.read_csv(filename, index_col = None, header = 0)
 				pos_list.append(pos)
 			elif filename.startswith('inventory'):
