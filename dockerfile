@@ -9,7 +9,7 @@ COPY . /app
 RUN apk add gcc && \
     rm -rf /var/lib/apt/lists/*
 	
-RUN apk add libffi-dev
+
 
 RUN apk add linux-headers
 
